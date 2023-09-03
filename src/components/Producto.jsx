@@ -3,12 +3,22 @@ import { Link } from 'react-router-dom'
 import FavImg from '../img/me-gusta.png'
 import NoFavImg from '../img/corazon.png'
 
-export default function Producto({producto}) {
+export default function Producto({producto, agregarAFavoritos, eliminasDeFavoritos}) {
 
 const [favorito, setFavorito] = useState(false)
 
 function handleClick(){
-    setFavorito(!favorito)
+  
+    if(favorito){
+        eliminasDeFavoritos(producto)
+        setFavorito(false)
+    }else {
+        agregarAFavoritos(producto)
+        setFavorito(true)
+
+    }
+    
+
 }
 
   return (

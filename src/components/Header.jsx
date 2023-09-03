@@ -8,7 +8,7 @@ export default function Header() {
       <Link className='icon' to={"/"}> <img src={LogoImg} alt="" /> </Link>
       <nav>
       <Link to={"/"}>Productos</Link>
-      <Link to={"/"}>Favoritos</Link>
+      <Link to={"/favoritos"}>Favoritos</Link>
       </nav>
     </header>
   )
