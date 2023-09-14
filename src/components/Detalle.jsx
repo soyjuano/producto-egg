@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react'
+// eslint-disable-next-line no-unused-vars
+import React, { useEffect, useState } from 'react' // ME DABA ERROR ESTE IMPORT
 import { useParams } from 'react-router-dom'
 import { obtenerProductosPorId } from '../servicios/productoService'
-import Producto from './Producto';
+// eslint-disable-next-line no-unused-vars
+import Producto from './Producto'; // ME DABA ERROR ESTE IMPORT
 
 export default function Detalle() {
 
